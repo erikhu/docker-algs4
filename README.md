@@ -18,3 +18,8 @@ docker run --rm -v $(pwd):/workspace algs4 javac-algs4 <FILE.java>
 Run some compiled file:
 ```
 docker run --rm -v $(pwd):/workspace algs4 java-algs4 <Class>
+
+Run multiple commands example:
+```
+docker run --rm -v $(pwd):/workspace algs4 /bin/bash -c "java-algs4 MoveToFront - < abra.txt | java-algs4 edu.princeton.cs.algs4.HexDump 16"
+```
