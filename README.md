@@ -13,8 +13,8 @@ docker build . -t algs4
 If you wish compile some file:
 
 ```
-docker run --rm -it -v $(pwd):/workspace algs4 javac-algs4 <FILE>
+docker run --rm -v $(pwd):/workspace algs4 javac-algs4 <FILE.java>
 ```
 Run some compiled file:
 ```
-docker run --rm -it -m $(pwd):/workspace algs4 java-algs4 <Class>
+docker run --rm -v $(pwd):/workspace algs4 java-algs4 <Class>
